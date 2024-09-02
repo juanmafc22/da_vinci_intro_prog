@@ -24,11 +24,13 @@ public class Ejercicio04 {
   // String[] - parámetros que se le pasan a main, un array de objetos String
   public static void main(String[] args) {
 
-    int edad;
-    String genero;
-    String generoUpperCase;
+    int edad, promedioEdad;
+    String genero, generoUpperCase;
+    String felicitacion = "Felicitaciones!!!! Puede jubilarse!";
+    String felicitacionNoBinaria = "Felicitaciones!!!! Puedx jubilarsx!";
     boolean edadVerificada = false;
     boolean generoVerificado = false;
+    promedioEdad = (65 + 60) / 2;
 
     System.out.print("Ingrese su edad: ");
     edad = input.nextInt();
@@ -42,14 +44,50 @@ public class Ejercicio04 {
     genero = input.nextLine();
     // convertir en Uppercase
     generoUpperCase = genero.toUpperCase();
-    if (generoUpperCase.equals("M") || generoUpperCase.equals("F") || generoUpperCase.equals("X") ) {
+
+    /* 
+    if (generoUpperCase == "M" || generoUpperCase == "F" || generoUpperCase == "X") {
       generoVerificado = true;
+      input.nextLine();
+    }
+    */
+
+    if (generoUpperCase.equals("M") || generoUpperCase.equals("F") || generoUpperCase.equals("X")) {
+      generoVerificado = true;
+      input.nextLine();
     }
 
     System.out.println("La edad: " + edad);
     System.out.println("La edad verificada: " + edadVerificada);
     System.out.println("El genero: " + generoUpperCase);
     System.out.println("El genero verificado: " + generoVerificado);
+
+    if (edadVerificada == true && generoVerificado == true) {
+      if (generoUpperCase.equals("M")) {
+        if (edad < 65) {
+          System.out.println("Estimado. No puede jubilarse, le faltan " + (65 - edad) + " años para jubilarse") ;
+        } else {
+          System.out.println(felicitacion);
+        }
+      } else if (generoUpperCase.equals("F")) {
+        if (edad < 60) {
+          System.out.println("Estimada. No puede jubilarse, le faltan " + (60 - edad) + " años para jubilarse");
+        } else {
+          System.out.println(felicitacion);
+        }
+      } else {
+        if (edad < promedioEdad) {
+          System.out.println("Estimadx. No puedx jubilarsx, lx faltan " + (promedioEdad - edad) + " años para jubilarsx");
+        } else {
+          System.out.println(felicitacionNoBinaria);
+        }
+      }
+    } else {
+      System.out.println("No se pudo ingresar. Edad y género NO validados");
+    }
+
+
+
 
   }
 
