@@ -1,0 +1,11 @@
+Ejercicio 1
+Desarrollar un programa que permita ingresar un vector de 8 elementos al azar de 0 a 100, e
+informe:
+El valor acumulado de todos los elementos del vector.
+Cantidad de elementos del vector que sean iguales a 36
+Cantidad de valores mayores a 50
+
+Ejercicio 2
+Se tienen las notas del primer parcial de los alumnos de dos cursos, el curso A y el curso B,
+se guardan en un array por cada curso, cada curso cuenta con 5 alumnos.
+Realizar un programa que muestre el curso que obtuvo el mayor promedio general

@@ -1,0 +1,10 @@
+Crear un programa para
+1. solicitar al usuario la cantidad de personas a registrar
+2. crear un array bidimensional donde cada fila almacena la info de una persona: nombre y edad
+3. solicitar al usuario que igrese el nombre y la edad de cada persona
+4. mostrar solo aquellos que comiencen con una vocal y cuya edad sea mayor a 25
+5. formatear la salida en formato tabla
+Ejemplo
+Nombre	Edad
+Ana	26
+Elena	33
